@@ -1,0 +1,12 @@
+parameters:
+  - name: 'course'
+    in: 'query'
+    description: 'Students by course'
+    required: True
+    schema:
+    type: string
+responses:
+  '200':
+      description: 'Success'
+  '400':
+      description: 'Group with name {course} do not exist'

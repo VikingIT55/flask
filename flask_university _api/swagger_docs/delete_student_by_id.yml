@@ -1,0 +1,12 @@
+parameters:
+  - name: 'Student ID'
+    in: 'query'
+    description: 'Write Student ID '
+    required: True
+    schema:
+    type: string
+responses:
+  '200':
+      description: 'Student was deleted'
+  '400':
+      description: 'You need write only numbers'

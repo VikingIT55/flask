@@ -1,0 +1,18 @@
+parameters:
+  - name: 'First name'
+    in: 'query'
+    description: 'Write first name'
+    required: True
+    schema:
+    type: string
+  - name: 'Last name'
+    in: 'query'
+    description: 'Write Last name'
+    required: True
+    schema:
+    type: string
+responses:
+  '200':
+      description: 'Student was added'
+  '400':
+      description: 'You need write only letters'

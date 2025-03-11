@@ -1,0 +1,14 @@
+parameters:
+  - name: 'quantity'
+    in: 'query'
+    description: 'Less or equals student count'
+    required: False
+    schema:
+    type: string
+responses:
+  '200':
+      description: 'Success'
+  '400':
+      description: 'less {count} does`t exist'
+
+

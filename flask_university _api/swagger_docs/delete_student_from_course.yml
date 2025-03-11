@@ -1,0 +1,29 @@
+parameters:
+  - name: 'student_id'
+    in: 'query'
+    description: 'Write Student ID '
+    required: True
+    schema:
+    type: string
+  - name: 'course_name'
+    in: 'query'
+    description: 'Choose course name'
+    required: True
+    schema:
+    type: string
+    enum:
+      - Math
+      - Biology
+      - Physics
+      - Chemistry
+      - History
+      - Literature
+      - Computer science
+      - Art
+      - Music
+      - Geography
+responses:
+  '200':
+      description: 'Success'
+  '400':
+      description: 'You need write only student ID'
